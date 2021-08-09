@@ -7,9 +7,9 @@
     position: fixed;
     width: 40%;
     top: 100px;
-    right: 10px;
+    right: -200px;
     list-style: none;
-    transition: 0.5s ease-out;
+    transition: 0.5s cubic-bezier(0, 0.82, 0.23, 1.61);
 }
 .navbar ul li{
     background-color: rgb(0, 1, 0);
@@ -24,14 +24,14 @@
     cursor: pointer;
 }
 .navbar ul li a{
+    font-size: 17px;
     text-decoration: none;
     color: white;
     list-style: none;
 }
-/* #menu{
+#menu{
     display: none;
-    top: 120px;
-} */
+}
 .menustyle{
     position: absolute;
     top: 30px;
@@ -40,6 +40,13 @@
     font-size: 34px;
     color: black;
 }
-/* #menu:checked ~ .navbar ul{
+#menu:checked ~ .navbar ul{
     right: 10px;
-} */
+}
+.logo{
+    position: absolute;
+    width: 20%;
+    float: left;
+    top: 2vh;
+    left: 1.5vh;
+}
