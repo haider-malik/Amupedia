@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar ul{
+    background-color: transparent;
+    position: fixed;
+    width: 40%;
+    top: 100px;
+    right: 10px;
+    list-style: none;
+    transition: 0.5s ease-out;
+}
+.navbar ul li{
+    background-color: rgb(0, 1, 0);
+    text-align: center;
+    border: none;
+    margin: 5px 0px;
+    border-radius: 10px;
+    width: 80%;
+    float: right;
+    margin-right: 10px;
+    padding: 3px 0px;
+    cursor: pointer;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+/* #menu{
+    display: none;
+    top: 120px;
+} */
+.menustyle{
+    position: absolute;
+    top: 30px;
+    float: right;
+    right: 24px;
+    font-size: 34px;
+    color: black;
+}
+/* #menu:checked ~ .navbar ul{
+    right: 10px;
+} */
