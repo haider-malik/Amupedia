@@ -3,31 +3,40 @@
     padding: 0;
 }
 .navbar ul{
-    background-color: transparent;
+    box-shadow: black;
+    opacity: 80%;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     width: 40%;
     top: 100px;
     right: -200px;
     list-style: none;
-    transition: 0.5s cubic-bezier(0, 0.82, 0.23, 1.61);
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.5s cubic-bezier(0, 1.21, 1, 0.97);
     z-index: 20;
 }
 .navbar ul li{
-    background-color: rgb(0, 1, 0);
+    display: inline-block;
+    background-color: transparent;
     text-align: center;
     border: none;
-    margin: 5px 0px;
+    margin: 5px;
+    margin: 5px auto;
+
     border-radius: 10px;
-    width: 80%;
+    width: 95%;
     float: right;
-    margin-right: 10px;
-    padding: 3px 0px;
+    padding: 3px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .navbar ul li a{
+    opacity: 100%;
     font-size: 17px;
     text-decoration: none;
-    color: white;
+    color: black;
     list-style: none;
 }
 #menu{
@@ -39,11 +48,11 @@
     float: right;
     right: 2.7vh;
     font-size: 34px;
-    color: black;
+    color: rgb(255, 255, 255);
     z-index: 20;
 }
 #menu:checked ~ .navbar ul{
-    right: 10px;
+    right: 0px;
 }
 .logo{
     position: absolute;
@@ -55,11 +64,17 @@
 .headerbg{
     width: 100%;
     height: 500px;
-    z-index: inherit;-1
+    z-index: inherit;
 }
 .pattern{
     width: 100%;
     position: absolute;
     z-index: 2;
     top: 420px;
+}
+#menu:checked ~ .logo{
+    opacity: 0%;
+}
+.navi{
+    color: green;
 }
