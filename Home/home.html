@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home | Amupedia </title>
     <link rel="stylesheet" href="home.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
 </head>
     <body>
-        <div class="blackoverlay"></div>
         <header>
             <!-- logo -->
             <img src="images/amupedia-symm.png" alt="Logo Amupedia" class="logo">
 
             <!-- hamburger menu icon (for mobile phones) -->
             <input type="checkbox" id="menu">
-            <label for="menu" class = "menustyle">
-                <i class="fas fa-bars"></i>
+            <label for="menu" class="ham">
+                    <div id="ham_line_1"></div>
+                    <div id="ham_line_2"></div>
+                    <div id="ham_line_3"></div>
             </label>
+
+            <!-- overlay to be shown when nav bar becomes visible -->
+            <div class="blackoverlay"></div>
 
             <!-- navigation bar -->
             <nav class="navbar">
