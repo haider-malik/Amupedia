@@ -41,7 +41,6 @@
 
 /* navigation bar style for mobile phone */
 .navbar ul{
-    box-shadow: black;
     opacity: 80%;
     background-color: rgb(255, 255, 255);
     position: fixed;
@@ -98,10 +97,10 @@
     justify-content: center;
     z-index: 21;
     position: absolute;
-    top: 20px;
+    top: 5.5vw;
     right: 20px;
-    width: 40px;
-    height: 30px;
+    width: 10%;
+    height: 10%;
     background-color: transparent;
     border-radius: 12px;
     padding: 10px;
