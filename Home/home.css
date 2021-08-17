@@ -53,6 +53,7 @@
     border-bottom-left-radius: 15px;
     transition: 0.5s cubic-bezier(0, 1.21, 1, 0.97);
     z-index: 21;
+    box-shadow: 5px,5px,10px,black;
 }
 
 /* targeting list items of navigation bar  */
@@ -152,11 +153,11 @@
 }
 
 /* style for wave pattern  */
-.pattern{
+.wave{
     width: 100%;
     position: absolute;
     z-index: 2;
-    top: 430px;
+    top: 460px;
 }
 
 /* animation after clicking the hamburger icon  */
