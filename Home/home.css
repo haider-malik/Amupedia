@@ -183,17 +183,22 @@ navigation menu opens in mobile phones */
     right: 0;
     z-index: 18;
     top: 55vh;
-    animation: mainwave 4s linear infinite;
+    animation: mainwave 4s ease-in-out infinite;
     animation-delay: 3s;
+    transition: all 0.1s ease;
 }
+
+/* special properties for 1st wave pattern animation */
 .wave1{
     z-index: 16;
     opacity: 0.4;
     top: 53vh;
-    animation: animate2 3s linear infinite;
+    animation: animate2 3s ease infinite;
     animation-delay: 0.2s;
     /* transform: rotate(-3deg); */
 }
+
+/* second wave for animation */
 .wave2{
   
     z-index: 15;
@@ -201,14 +206,18 @@ navigation menu opens in mobile phones */
     opacity: 0.6;
     animation: animate 3s linear infinite;
 }
+
+/* third wave for animation  */
 .wave3{
   
     z-index: 17;
     top: 55vh;
     opacity: 0.8;
     animation: animate 4s linear infinite;
+    animation-delay: 1s;
 }
 
+/* fourth wave for animation */
 .wave4{
     z-index: 14;
     top: 52vh;
@@ -217,6 +226,7 @@ navigation menu opens in mobile phones */
     animation-delay: 1s;
 }
 
+/* animation for the main wave which will go up and down */
 @keyframes mainwave{
     0%{
         top: 55vh;
@@ -229,6 +239,7 @@ navigation menu opens in mobile phones */
     }
 }
 
+/* animation for the waves which will go left to right  */
 @keyframes animate {
     0%{
         background-position-x: 0;
@@ -241,6 +252,8 @@ navigation menu opens in mobile phones */
         background-position-x: 0;
     }
 }
+
+/* animation for the waves which will come right to left  */
 @keyframes animate2 {
     0%{
         background-position-x: 0;
