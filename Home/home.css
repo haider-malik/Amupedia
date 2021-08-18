@@ -3,33 +3,6 @@
     padding: 0;
 }
 
-/* Not working on checkbox */
-.blackoverlay{
-    position: absolute;
-    z-index: 20;
-    width: 100%;
-    height: 100vh;
-    color: white;
-    background-color: black;
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-/* Amupedia text in the center of the page */
-.center_text{
-    text-align: center;
-    width: 50%;
-    margin: auto 2vw;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: black;
-    position: absolute;
-    display: block;
-    top: 40vw;
-    left: 25vw;
-    color: white;
-}
-
 /* style for logo  */
 .logo{
     position: absolute;
@@ -64,7 +37,7 @@
     border: none;
     margin: 5px;
     margin: 5px auto;
-
+    
     z-index: 21;
     border-radius: 10px;
     width: 95%;
@@ -139,25 +112,21 @@
     transition: all 0.4s ease;
 }
 
+/* style for overlay that apprars when nav menu shows up  */
+.blackoverlay{
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
 /* changes when checkbox is checked  */
 #menu:checked ~ .navbar ul{
     right: 0px;
-}
-
-
-/* style for background on top  */
-.headerbg{
-    width: 100%;
-    height: 500px;
-    z-index: inherit;
-}
-
-/* style for wave pattern  */
-.wave{
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    top: 460px;
 }
 
 /* animation after clicking the hamburger icon  */
@@ -179,4 +148,107 @@
 navigation menu opens in mobile phones */
 #menu:checked ~ .blackoverlay{
     opacity: 0.4;
+}
+
+/* style for background on top  */
+.headerbg{
+    width: 100%;
+    height: 500px;
+}
+
+/* Amupedia text in the center of the page */
+.center_text{
+    text-align: center;
+    width: 50%;
+    margin: auto 2vw;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: black;
+    position: absolute;
+    display: block;
+    top: 40vw;
+    left: 25vw;
+    color: white;
+}
+
+/* style for wave pattern  */
+.wave{
+    background: url("images/wave.png");
+    background-size: 600px 200px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 18;
+    top: 55vh;
+    animation: mainwave 4s linear infinite;
+    animation-delay: 3s;
+}
+.wave1{
+    z-index: 16;
+    opacity: 0.4;
+    top: 53vh;
+    animation: animate2 3s linear infinite;
+    animation-delay: 0.2s;
+    /* transform: rotate(-3deg); */
+}
+.wave2{
+  
+    z-index: 15;
+    top: 58vh;
+    opacity: 0.6;
+    animation: animate 3s linear infinite;
+}
+.wave3{
+  
+    z-index: 17;
+    top: 55vh;
+    opacity: 0.8;
+    animation: animate 4s linear infinite;
+}
+
+.wave4{
+    z-index: 14;
+    top: 52vh;
+    opacity: 0.3;
+    animation: animate2 5s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes mainwave{
+    0%{
+        top: 55vh;
+    }
+    50%{
+        top: 57vh;
+    }
+    100%{
+        top: 55vh;
+    }
+}
+
+@keyframes animate {
+    0%{
+        background-position-x: 0;
+        
+    }
+    50%{
+        background-position-x: 300px;
+    }
+    100%{
+        background-position-x: 0;
+    }
+}
+@keyframes animate2 {
+    0%{
+        background-position-x: 0;
+    }
+    50%{
+        background-position-x: -190px;
+    }
+    100%{
+        background-position-x: 0;
+    }
 }
