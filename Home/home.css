@@ -1,182 +1,306 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Not working on checkbox */
-.blackoverlay{
-    position: absolute;
-    z-index: 20;
-    width: 100%;
-    height: 100vh;
-    color: white;
-    background-color: black;
-    opacity: 0;
-    transition: all 0.4s ease;
+.blackoverlay {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 
 /* Amupedia text in the center of the page */
-.center_text{
-    text-align: center;
-    width: 50%;
-    margin: auto 2vw;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: black;
-    position: absolute;
-    display: block;
-    top: 40vw;
-    left: 25vw;
-    color: white;
+.center_text {
+  text-align: center;
+  width: 50%;
+  margin: auto 2vw;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: black;
+  position: absolute;
+  display: block;
+  top: 40vw;
+  left: 25vw;
+  color: white;
 }
 
 /* style for logo  */
-.logo{
-    position: absolute;
-    width: 20%;
-    float: left;
-    top: 2vh;
-    left: 1.5vh;
+.logo {
+  position: absolute;
+  width: 20%;
+  float: left;
+  top: 2vh;
+  left: 1.5vh;
 }
 
 /* navigation bar style for mobile phone */
-.navbar ul{
-    box-shadow: black;
-    opacity: 80%;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    width: 40%;
-    top: 100px;
-    right: -500px;
-    list-style: none;
-    padding: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    transition: 0.5s cubic-bezier(0, 1.21, 1, 0.97);
-    z-index: 21;
+.navbar ul {
+  box-shadow: black;
+  opacity: 80%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 40%;
+  top: 100px;
+  right: -500px;
+  list-style: none;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: 0.5s cubic-bezier(0, 1.21, 1, 0.97);
+  z-index: 21;
 }
 
 /* targeting list items of navigation bar  */
-.navbar ul li{
-    display: inline-block;
-    background-color: transparent;
-    text-align: center;
-    border: none;
-    margin: 5px;
-    margin: 5px auto;
+.navbar ul li {
+  display: inline-block;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  margin: 5px;
+  margin: 5px auto;
 
-    z-index: 21;
-    border-radius: 10px;
-    width: 95%;
-    float: right;
-    padding: 3px;
-    cursor: pointer;
-    box-sizing: border-box;
+  z-index: 21;
+  border-radius: 10px;
+  width: 95%;
+  float: right;
+  padding: 3px;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 /* nav bar links  */
-.navbar ul li a{
-    font-size: 17px;
-    text-decoration: none;
-    color: black;
-    list-style: none;
+.navbar ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
 }
 
 /* checkbox for hamburger menu  */
-#menu{
-    position: absolute;
-    opacity: 0;
-    z-index: 20;
-    top: 10px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
+#menu {
+  position: absolute;
+  opacity: 0;
+  z-index: 20;
+  top: 10px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
 }
 
 /* hamburger menu style  */
-.ham{
-    justify-content: center;
-    z-index: 21;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 12px;
-    padding: 10px;
-    transition: all 0.5s ease;
+.ham {
+  justify-content: center;
+  z-index: 21;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.5s ease;
 }
 
-
 /* styling of lines present in hamburger menu */
-.ham div{
-    position: absolute;
-    left: 12px;
-    width: 60%;
-    margin: auto;
-    height: 4px;
-    border-radius: 4px;
-    background-color: white;
-    color: white;
-    transition: all 0.5s ease;
+.ham div {
+  position: absolute;
+  left: 12px;
+  width: 60%;
+  margin: auto;
+  height: 4px;
+  border-radius: 4px;
+  background-color: white;
+  color: white;
+  transition: all 0.5s ease;
 }
 
 /* style for each line of hamburger menu */
-#ham_line_1{
-    transition: all 0.4s ease;
+#ham_line_1 {
+  transition: all 0.4s ease;
 }
 
 /* targeting each line uniquely */
-#ham_line_2{
-    top: 23px;
-    transition: all 0.5s ease;
+#ham_line_2 {
+  top: 23px;
+  transition: all 0.5s ease;
 }
 
 /* line 3 */
-#ham_line_3{
-    top: 37px;
-    transition: all 0.4s ease;
+#ham_line_3 {
+  top: 37px;
+  transition: all 0.4s ease;
 }
 
 /* changes when checkbox is checked  */
-#menu:checked ~ .navbar ul{
-    right: 0px;
+#menu:checked ~ .navbar ul {
+  right: 0px;
 }
 
-
 /* style for background on top  */
-.headerbg{
-    width: 100%;
-    height: 500px;
-    z-index: inherit;
+.headerbg {
+  width: 100%;
+  height: 500px;
+  z-index: inherit;
 }
 
 /* style for wave pattern  */
-.pattern{
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    top: 430px;
+.pattern {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 430px;
 }
 
 /* animation after clicking the hamburger icon  */
-#menu:checked ~ .ham > #ham_line_1{
-    transform: rotate(135deg);
-    top: 23px;
+#menu:checked ~ .ham > #ham_line_1 {
+  transform: rotate(135deg);
+  top: 23px;
 }
 
-#menu:checked ~ .ham > #ham_line_3{
-    transform: rotate(-135deg);
-    top: 23px;
+#menu:checked ~ .ham > #ham_line_3 {
+  transform: rotate(-135deg);
+  top: 23px;
 }
 
-#menu:checked ~ .ham > #ham_line_2{
-    transform: rotate(135deg);
+#menu:checked ~ .ham > #ham_line_2 {
+  transform: rotate(135deg);
 }
 
 /* appearance for the overlay in the background when 
 navigation menu opens in mobile phones */
-#menu:checked ~ .blackoverlay{
-    opacity: 0.4;
+#menu:checked ~ .blackoverlay {
+  opacity: 0.4;
+}
+/* contact form  */
+.contact {
+  min-height: 60vh;
+  background: url(contacbg.png) center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card {
+  flex: 0 0 80%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+form {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  margin: 10px 0;
+}
+form h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(115, 117, 248);
+}
+form input,
+form textarea {
+  padding: 5px;
+  border: 3px solid rgb(79, 81, 168);
+}
+input::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
+  color: #0d1317;
+  background: rgb(185, 186, 236);
+}
+.form-btn {
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 5px;
+  background: rgb(119, 122, 245);
+  color: white;
+  transition: color 1s ease-in-out, background 1s ease-in-out;
+}
+
+/* future plans section */
+
+.ftheading {
+  display: flex;
+  justify-content: center;
+}
+
+.line2 {
+  margin-top: 10px;
+  margin-left: 150px;
+
+  background-color: black;
+  width: 70px;
+  height: 5px;
+}
+
+.ftplans {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+  flex-wrap: wrap;
+}
+.plans {
+  margin: 10px;
+  width: 250px;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line1 {
+  margin-left: 95px;
+  margin-bottom: 15px;
+  background-color: rgb(119, 122, 245);
+  width: 60px;
+  height: 1vh;
+}
+p {
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* footer changes  */
+.footer-box {
+  height: 40vh;
+  color: white;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+}
+.background {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  height: 40vh;
+  width: 99vw;
+}
+.fpattern {
+  position: relative;
+  width: 100%;
+  
+  z-index: 2;
+  bottom: 700px;
+}
+
+.content {
+  height: 80vh;
+  background-color: white;
 }
