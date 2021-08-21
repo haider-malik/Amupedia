@@ -266,11 +266,19 @@ navigation menu opens in mobile phones */
     }
 }
 
+/* styling for section container  */
+#content{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
 /* styling for our mission container  */
 .mission{
-    font-family: 'Baloo Bhai 2', cursive;
+    
+    align-items: center;
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
     z-index: 30;
     
@@ -278,25 +286,90 @@ navigation menu opens in mobile phones */
 .mission h2{
     position: relative;
     width: 100%;
-    margin: auto;
+
     height: 50px;
     z-index: 30;
     text-align: center;
-    font-size: 13vw;
+    font-size: 2.5rem;
 }
 
 .mission p{
+    max-width: 800px;
+    margin: 50px auto;
     position: relative;
-    top: 2vw;
     text-align: center;
-    padding: 5vw;
-    font-size: 1rem;
+    padding: 0px 10px;
+    font-size: 6vw;
     z-index: 30;
+    overflow: hidden;
 }
 
 .mission img{
     position: relative;
-    bottom: 38vh;
+    bottom: 110vw;
+    align-items: center;
+    justify-content: center;
     z-index: 29;
     opacity: 0.4;
+}
+
+/* font size fixed for 500px or above width  */
+@media only screen and (min-width: 500px){
+    .mission p{
+        font-size: 30px;
+    }
+}
+
+/* styling the our services section  */
+#ourserv{
+
+    position: relative;
+    top: 50px;
+    flex-direction: column;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* "Our Services" heading styling */
+#ourserv h2{
+    width: 100%;
+    z-index: 30;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* height of mission container and bottom of over services container 
+changed for width 321px or above */
+@media only screen and (max-width: 321px) {
+    .mission{
+        height: 410px;
+        bottom: 50px;
+    }
+    #ourserv{
+        top: 0px;
+        bottom: 100px;
+    }
+}
+
+#ourserimgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ourserimgs div{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+#ourserimgs div img{
+    display: block;
+    margin: 15px auto;
+
+    width: 250px;
+    height: 170px;
+}
+
+#ourserimgs div p{
+    font-weight: bold;
 }
