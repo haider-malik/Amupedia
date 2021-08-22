@@ -206,6 +206,7 @@ form h3 {
   text-align: center;
   text-transform: uppercase;
   color: rgb(115, 117, 248);
+  font-family: "Baloo Bhai 2", cursive;
 }
 form input,
 form textarea {
@@ -214,6 +215,7 @@ form textarea {
 }
 input::placeholder,
 textarea::placeholder {
+  font-family: "Baloo Bhai 2", cursive;
   text-transform: uppercase;
   color: #0d1317;
   background: rgb(185, 186, 236);
@@ -226,6 +228,44 @@ textarea::placeholder {
   background: rgb(119, 122, 245);
   color: white;
   transition: color 1s ease-in-out, background 1s ease-in-out;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+/* notes section */
+.notes {
+  margin-top: 50px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.notesimg {
+  width: 280px;
+  margin: 15px;
+  border: 5px solid rgb(207, 207, 207);
+  border-radius: 15px;
+}
+
+/* recent updates section */
+
+.updates {
+  margin-top: 50px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.updatesimg {
+  background-color: ;
+  width: 300px;
+  margin: 15px;
+}
+
+h2 {
+  padding: 10px;
+  text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
 }
 
 /* future plans section */
@@ -233,12 +273,13 @@ textarea::placeholder {
 .ftheading {
   display: flex;
   justify-content: center;
+  font-family: "Baloo Bhai 2", cursive;
 }
 
 .line2 {
   margin-top: 10px;
   margin-left: 150px;
-
+  
   background-color: black;
   width: 70px;
   height: 5px;
@@ -258,6 +299,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Baloo Bhai 2", cursive;
 }
 
 .line1 {
@@ -271,6 +313,7 @@ p {
   margin: 5px;
   padding: 20px;
   text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
 }
 
 /* footer changes  */
@@ -295,7 +338,7 @@ p {
 .fpattern {
   position: relative;
   width: 100%;
-  
+
   z-index: 2;
   bottom: 700px;
 }
