@@ -10,6 +10,7 @@
     float: left;
     top: 2vh;
     left: 1.5vh;
+    max-width: 105px;
 }
 
 /* navigation bar style for mobile phone */
@@ -19,7 +20,7 @@
     position: fixed;
     width: 40%;
     top: 100px;
-    right: -500px;
+    right: -700px;
     list-style: none;
     padding: 15px;
     border-top-left-radius: 15px;
@@ -158,33 +159,34 @@ navigation menu opens in mobile phones */
 
 /* Amupedia text in the center of the page */
 .center_text{
+    position: relative;
+    z-index: 30;
     text-align: center;
-    width: 50%;
-    margin: auto 2vw;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: bold;
-    text-shadow: black;
-    position: absolute;
-    display: block;
-    top: 40vw;
-    left: 25vw;
+    bottom: 300px;
     color: white;
+}
+
+/* Center Text when screen becomes bigger  */
+@media only screen and (min-width:600px){
+    .center_text{
+        font-size: 4rem;
+    }
 }
 
 /* style for wave pattern  */
 .wave{
     background: url("images/wave.png");
-    background-size: 600px 200px;
+    background-size: 140vw 150px;
     height: 100%;
     background-repeat: no-repeat;
-    background-position: 0 0;
     width: 100%;
     position: absolute;
     right: 0;
     z-index: 18;
-    top: 55vh;
+    top: 450px;
     animation: mainwave 4s ease-in-out infinite;
-    animation-delay: 3s;
     transition: all 0.1s ease;
 }
 
@@ -192,7 +194,7 @@ navigation menu opens in mobile phones */
 .wave1{
     z-index: 16;
     opacity: 0.4;
-    top: 53vh;
+    top: 440px;
     animation: animate2 3s ease infinite;
     animation-delay: 0.2s;
     /* transform: rotate(-3deg); */
@@ -202,25 +204,26 @@ navigation menu opens in mobile phones */
 .wave2{
   
     z-index: 15;
-    top: 58vh;
+    top: 445px;
     opacity: 0.6;
     animation: animate 3s linear infinite;
+
 }
 
 /* third wave for animation  */
 .wave3{
   
     z-index: 17;
-    top: 55vh;
+    top: 460px;
     opacity: 0.8;
     animation: animate 9s ease-in-out infinite;
-    animation-delay: 2s;
+    animation-delay: 6s;
 }
 
 /* fourth wave for animation */
 .wave4{
     z-index: 14;
-    top: 52vh;
+    top: 430px;
     opacity: 0.3;
     animation: animate2 5s linear infinite;
     animation-delay: 1s;
@@ -229,13 +232,13 @@ navigation menu opens in mobile phones */
 /* animation for the main wave which will go up and down */
 @keyframes mainwave{
     0%{
-        top: 55vh;
+        background-position-x: 0;
     }
     50%{
-        top: 57vh;
+        background-position-x: -100px;
     }
     100%{
-        top: 55vh;
+        background-position-x: 0;
     }
 }
 
@@ -246,7 +249,7 @@ navigation menu opens in mobile phones */
         
     }
     50%{
-        background-position-x: 270px;
+        background-position-x: 250px;
     }
     100%{
         background-position-x: 0;
@@ -265,6 +268,15 @@ navigation menu opens in mobile phones */
         background-position-x: 0;
     }
 }
+
+/* for mobile phones and small screen water wave animation will be controlled by this css  */
+@media only screen and (max-width:486px){
+    .wave{
+        background-size: 700px 100px;
+    }
+}
+
+
 
 /* styling for section container  */
 #content{
@@ -350,29 +362,62 @@ navigation menu opens in mobile phones */
 .grabnotes{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1100px;
     margin: auto;
     justify-content: center;
 }
+
+/* Grab Your Notes Heading  */
 .grabh2{
     line-height: 55px;
     z-index: 30;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 20px;
+    margin: 40px;
 }
 .grabnotes div{
     text-align: center;
     height: 130px;
     width: 130px;
-    background-color: red;
-    border: 6px solid white;
     border-radius: 10px;
-    margin: 8px 3vw;
-    box-shadow: -5px -5px 20px rgb(196, 196, 196);
+    background-size: 6em;
+    margin: 24px 3vw;
 }
 .grabnotes div p{
     position: relative;
-    top: 100px;
+    top: 120px;
+
+    font-weight: bold;
+}
+.grab1{
+    background: url('images/B.Tech.png') no-repeat top center/cover;
+}
+.grab2{
+    background: url('images/2007.i203.003_architect_cartoon_set-03.jpg') no-repeat top center/cover;
+}
+.grab3{
+    background: url('images/5362163.jpg') no-repeat top center/cover;
+}
+.grab4{
+    background: url('images/B.Sc.svg') no-repeat top center/cover;
+}
+
+/* styling for grab your notes section for pc  */
+@media only screen and (min-width:900px){
+    
+    .grabnotes div{
+        width: 200px;
+        height: 200px;
+        background-size: 10em;
+    }
+    .grabnotes div p{
+        top: 200px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:1050px){
+    .grabnotes .grab2 p{
+        top: 150px;
+    }
 }
