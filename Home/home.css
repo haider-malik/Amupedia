@@ -125,6 +125,10 @@
     transition: all 0.4s ease;
 }
 
+#menu:checked ~ .ham{
+    position: fixed;
+}
+
 /* changes when checkbox is checked  */
 #menu:checked ~ .navbar ul{
     right: 0px;
@@ -374,6 +378,11 @@ navigation menu opens in mobile phones */
     font-size: 2.5rem;
     font-weight: bold;
     margin: 40px;
+}
+.grabnotes a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 .grabnotes div{
     text-align: center;
