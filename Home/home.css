@@ -3,6 +3,23 @@
     padding: 0;
 }
 
+/* styling for background svg images  */
+.bgimg{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#serv{
+    top: 1400px;
+}
+
+#grabn{
+    top: 1900px;
+
+    
+}
+
 /* style for logo  */
 .logo{
     position: absolute;
@@ -161,6 +178,7 @@ navigation menu opens in mobile phones */
 .headerbg{
     width: 100%;
     height: 500px;
+    background: url('images/image 4.jpeg') no-repeat center center/cover;
 }
 
 /* Amupedia text in the center of the page */
@@ -296,8 +314,6 @@ navigation menu opens in mobile phones */
     z-index: 30;
     text-align: center;
     margin: 20px 0px;    
-    background: url('images/mission-bg.svg') no-repeat center center/cover;
-    background-size: 100vw;
 }
 .mission h2{
     line-height: 55px;
@@ -364,6 +380,9 @@ navigation menu opens in mobile phones */
     font-weight: bold;
 }
 
+/* styling for vector bg for grab notes */
+
+
 /* styling for grab your notes  */
 .grabnotes{
     display: flex;
@@ -402,13 +421,14 @@ navigation menu opens in mobile phones */
     font-weight: bold;
 }
 .grab1{
-    background: url('images/B.Tech.png') no-repeat top center/cover;
+    background: url('images/BTech.svg') no-repeat top center;
+    background-size: 1000px;
 }
 .grab2{
-    background: url('images/2007.i203.003_architect_cartoon_set-03.jpg') no-repeat top center/cover;
+    background: url('images/BE.svg') no-repeat top center/cover;
 }
 .grab3{
-    background: url('images/5362163.jpg') no-repeat top center/cover;
+    background: url('images/BCOM.svg') no-repeat top center/cover;
 }
 .grab4{
     background: url('images/B.Sc.svg') no-repeat top center/cover;
