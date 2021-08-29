@@ -50,19 +50,16 @@
 /* targeting list items of navigation bar  */
 .navbar ul li{
     display: inline-block;
-    background-color: transparent;
     text-align: center;
     border: none;
-    margin: 5px;
     margin: 5px auto;
     
     z-index: 21;
     border-radius: 10px;
-    width: 95%;
-    float: right;
-    padding: 3px;
+    width: 100%;
+    /* float: right; */
+    padding: 2px;
     cursor: pointer;
-    box-sizing: border-box;
 }
 
 /* nav bar links  */
@@ -72,6 +69,8 @@
     color: black;
     list-style: none;
 }
+
+
 
 /* checkbox for hamburger menu  */
 #menu{
@@ -174,11 +173,50 @@ navigation menu opens in mobile phones */
     z-index: 900;
 }
 
+/* navigation bar on bigger screens  */
+@media only screen and (min-width:750px){
+    .logo{
+        left: 30px;
+    }
+    .ham{
+        display: none;
+    }
+    .navbar ul{
+        width: 600px;
+        position: absolute;
+        background: transparent;
+        display: flex;
+        right: 20px;
+        top: 40px;
+        padding: 0;
+    }
+    .navbar ul li{
+        background-color: transparent;
+        font-weight: bold;
+        width: 100px;
+        border-radius: 15px;
+        margin: auto 5px;
+        transition: all 0.2s ease;
+    }
+    .navbar ul li a{
+        width: 100%;
+        font-size: 22px;
+        color: white;
+        text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228) ;
+    }
+    .navbar ul li:hover > a{
+        text-decoration: underline;
+    }
+    .contus {
+        flex-basis: 21%;
+    }
+}
+
 /* style for background on top  */
 .headerbg{
     width: 100%;
     height: 500px;
-    background: url('images/image 4.jpeg') no-repeat center center/cover;
+    background: url('images/header_bg.svg') no-repeat center center/cover;
 }
 
 /* Amupedia text in the center of the page */
@@ -192,10 +230,22 @@ navigation menu opens in mobile phones */
     color: white;
 }
 
+/* subheading of amupedia text in the center  */
+#subline{
+    position: relative;
+    bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* Center Text when screen becomes bigger  */
 @media only screen and (min-width:600px){
     .center_text{
         font-size: 4rem;
+    }
+    #subline{
+        font-size: 23px;
     }
 }
 
