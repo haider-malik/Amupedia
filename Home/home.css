@@ -201,7 +201,7 @@ navigation menu opens in mobile phones */
     .navbar ul li a{
         width: 100%;
         font-size: 22px;
-        color: white;
+        color: rgb(255, 255, 255);
         text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228) ;
     }
     .navbar ul li:hover > a{
@@ -389,7 +389,8 @@ navigation menu opens in mobile phones */
 #ourserv{
     z-index: 30;
     position: relative;
-    margin: 40px 0px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 /* "Our Services" heading styling */
@@ -437,18 +438,20 @@ navigation menu opens in mobile phones */
 .grabnotes{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 20px auto;
+    margin-bottom: 40px;
     justify-content: center;
 }
 
 /* Grab Your Notes Heading  */
 .grabh2{
+    justify-content: center;
     line-height: 55px;
     z-index: 30;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 40px;
+    margin: 80px auto 0px auto;
 }
 .grabnotes a{
     text-decoration: none;
@@ -466,13 +469,12 @@ navigation menu opens in mobile phones */
 }
 .grabnotes div p{
     position: relative;
-    top: 120px;
-
+    top: 140px;
+    line-height: 25px;
     font-weight: bold;
 }
 .grab1{
     background: url('images/BTech.svg') no-repeat top center;
-    background-size: 1000px;
 }
 .grab2{
     background: url('images/BE.svg') no-repeat top center/cover;
@@ -493,7 +495,7 @@ navigation menu opens in mobile phones */
         background-size: 10em;
     }
     .grabnotes div p{
-        top: 200px;
+        top: 220px;
         font-size: 30px;
     }
 }
@@ -502,4 +504,18 @@ navigation menu opens in mobile phones */
     .grabnotes .grab2 p{
         top: 150px;
     }
+}
+
+/* styling for recent updates section  */
+/* same css as grabnotes section will be given to recent updates section  */
+
+.rec1{
+    background: url('images/recup_app.svg') no-repeat center center;
+}
+.rec2{
+    background: url('images/recup_blog.svg') no-repeat top center;
+}
+.rec3{
+    background: url('images/recup_comp_exam.svg') no-repeat top center;
+    background-size: 4em;
 }
