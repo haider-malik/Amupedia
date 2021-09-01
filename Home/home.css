@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+h2{
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: bold;
+}
+
 /* styling for background svg images  */
 /* .bgimg{
     position: absolute;
@@ -456,7 +461,7 @@ navigation menu opens in mobile phones */
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 80px auto 0px auto;
+    margin: 80px 8px 0px 8px;
 }
 .grabnotes a{
     text-decoration: none;
@@ -524,4 +529,75 @@ navigation menu opens in mobile phones */
 .rec3{
     background: url('images/recup_comp_exam.svg') no-repeat top center;
     background-size: 4em;
+}
+
+/* Styling for contact form  */
+.cntfrm{
+    margin-top: 30px;
+}
+.cntfrm div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.details{
+    flex-basis: 20%;
+    margin: 7px;
+    padding: 13px 18px;
+    background-color: rgb(218, 218, 255);
+    color: royalblue;
+    font-family: 'Baloo Bhai 2';
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px rgb(86, 86, 255);
+}
+
+::placeholder{
+    color: rgb(62, 62, 252);
+    font-family: 'Hina Mincho', serif;
+}
+
+input:focus{
+    background-color: rgb(243, 239, 255);
+    box-shadow: none;
+    outline: none;
+}
+
+.address{
+    margin: 7px;
+    padding: 13px 18px;
+    background-color: rgb(188, 188, 250);
+    color: royalblue;
+    font-family: 'Baloo Bhai 2';
+    border: none;
+    border-radius: 10px;
+    flex-basis: 41%;
+    box-shadow: 0px 1.4px rgb(86, 86, 255);
+}
+
+.msg{
+    margin: 7px;
+    padding: 24px 18px;
+    background-color: rgb(172, 168, 249);
+    color: royalblue;
+    font-family: 'Baloo Bhai 2';
+    border: none;
+    border-radius: 10px;
+    flex-basis: 38%;
+    box-shadow: 0px 1.4px rgb(86, 86, 255);
+}
+
+.sub{
+    color: rgb(62, 62, 252);
+    flex-basis: 20%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 7px; 
+    background-color: rgb(159, 154, 255);
+    box-shadow: 0px 1.4px rgb(86, 86, 255);
+    cursor: pointer;
 }
