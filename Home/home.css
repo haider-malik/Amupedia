@@ -8,25 +8,6 @@ h2{
     font-weight: bold;
 }
 
-
-
-/* styling for background svg images  */
-/* .bgimg{
-    position: absolute;
-    z-index: -1;
-    opacity: 0.2;
-}
-
-#serv{
-    top: 1400px;
-}
-
-#grabn{
-    top: 1900px;
-
-    
-} */
-
 /* style for logo  */
 .logo{
     position: absolute;
@@ -49,9 +30,8 @@ h2{
     padding: 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    transition: 0.5s cubic-bezier(0, 1.21, 1, 0.97);
+    transition: all 0.5s cubic-bezier(0, 1.21, 1, 0.97);
     z-index: 1000;
-    box-shadow: 5px,5px,10px,black;
 }
 
 /* targeting list items of navigation bar  */
@@ -60,11 +40,10 @@ h2{
     text-align: center;
     border: none;
     margin: 5px auto;
-    
+    transition: all 0.5s ease;
     z-index: 21;
     border-radius: 10px;
     width: 100%;
-    /* float: right; */
     padding: 2px;
     cursor: pointer;
 }
@@ -180,6 +159,48 @@ navigation menu opens in mobile phones */
     z-index: 900;
 }
 
+/* courses section effect in navbar  */
+#crs{
+    display: none;
+}
+
+.crstext{
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#crsicon{
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.crslist{
+    max-height: 0;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.crslist a{
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    margin: 6px;
+}
+
+#crs:checked ~ .crslist{
+    max-height: 400px;
+    opacity: 1;
+}
+
+#crs:checked ~ .crstext > #crsicon{
+    transform: rotate(-180deg);
+    top: 2.3px;
+}
+
 /* navigation bar on bigger screens  */
 @media only screen and (min-width:750px){
     .logo{
@@ -193,7 +214,7 @@ navigation menu opens in mobile phones */
         position: absolute;
         background: transparent;
         display: flex;
-        right: 20px;
+        right: 50px;
         top: 40px;
         padding: 0;
     }
@@ -214,11 +235,43 @@ navigation menu opens in mobile phones */
     .navbar ul li:hover > a{
         text-decoration: underline;
     }
-    .contus {
+    .tem {
         flex-basis: 12%;
     }
     .blg{
         flex-basis: 12%;
+    }
+    .crstext{
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .crslist{
+        position: absolute;
+        top: 39px;
+        right: 215px;
+        display: flex;
+        flex-direction: column;
+    }
+    .crslist a{
+        margin: 0;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .crslist a:hover{
+        text-decoration: underline;
+    }
+    .crslist:hover{
+        height: auto;
+        opacity: 1;
+    }
+    .crstext:hover{
+        text-decoration: underline;
+    }
+    .crstext:hover ~ .crslist{
+        height: auto;
+        opacity: 1;
     }
 }
 
@@ -231,6 +284,7 @@ navigation menu opens in mobile phones */
 
 /* Amupedia text in the center of the page */
 .center_text{
+    text-transform: uppercase;
     position: relative;
     z-index: 30;
     text-align: center;
@@ -243,7 +297,7 @@ navigation menu opens in mobile phones */
 /* subheading of amupedia text in the center  */
 #subline{
     position: relative;
-    bottom: 10px;
+    bottom: 2px;
     font-size: 13px;
     text-align: center;
     text-transform: uppercase;
@@ -504,7 +558,7 @@ navigation menu opens in mobile phones */
     .grabnotes div{
         width: 200px;
         height: 200px;
-        background-size: 8em;
+        background-size: 10em;
     }
     .grabnotes div p{
         top: 220px;
@@ -631,7 +685,7 @@ input:focus{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    top: 35px;
+    top: 40px;
 }
 #icons div{
     width: 40px;
