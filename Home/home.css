@@ -170,6 +170,7 @@ navigation menu opens in mobile phones */
     margin: 5px auto;
     font-size: 17px;
     cursor: pointer;
+    z-index: 1050;
 }
 
 #crsicon{
@@ -179,10 +180,13 @@ navigation menu opens in mobile phones */
 }
 
 .crslist{
-    max-height: 0;
+    position: relative;
+    bottom: 10px;
     opacity: 0;
+    max-height: 0;
     text-align: center;
     transition: all 0.5s ease;
+    z-index: 1001;
 }
 .crslist a{
     font-size: 17px;
@@ -193,6 +197,7 @@ navigation menu opens in mobile phones */
 
 #crs:checked ~ .crslist{
     max-height: 400px;
+    bottom: 0;
     opacity: 1;
 }
 
