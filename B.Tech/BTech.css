@@ -1,5 +1,115 @@
+
+h2 {
+    margin: 100px 20px 30px 20px;
+    line-height: 55px;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
 .topbg{
     width: 100%;
     height: 500px;
     background: url('images/top_bg.svg') no-repeat center center/cover;
+}
+
+/* styling for branches flex box  */
+#branches{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+#branches a{
+    text-decoration: none;
+    width: 320px;
+    height: 240px;
+    margin: 20px;
+}
+/* styling for every branch div  */
+#branches  div{
+    height: 240px;
+    /* background-color: black; */
+    background-size: 330px 250px;
+    box-shadow: -2px -2px 8px black;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    text-shadow: -2px -2px 8px rgba(0, 0, 0, 0.906);
+}
+
+/* styling for para in branches div  */
+#branches div p{
+    width: 280px;
+    margin: auto;
+    position: relative;
+    top: 65%;
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* for screens below 300px  */
+@media only screen and (max-width: 299px){
+    #branches div p{
+        width: 100%;
+    }
+}
+
+#cs{
+    background: url('images/cs.svg') no-repeat center center;
+}
+#elb{
+    background: url('images/elb.svg') no-repeat center center;
+}
+#elec{
+    background: url('images/elec.svg') no-repeat center center;
+}
+#mech{
+    background: url('images/mech.svg') no-repeat center center;
+}
+#civil{
+    background: url('images/civil.svg') no-repeat center center;
+}
+#chem{
+    background: url('images/chem.svg') no-repeat center center;
+}
+
+#cs:hover{
+    box-shadow: none;
+    text-shadow: -2px -2px 8px rgba(255, 255, 255, 0.906);
+    background-size: 350px 270px;
+}
+#elb:hover{
+    box-shadow: none;
+    text-shadow: -2px -2px 8px rgba(255, 255, 255, 0.906);
+    background-size: 350px 270px;
+}
+#elec:hover{
+    box-shadow: none;
+    text-shadow: -2px -2px 8px rgba(255, 255, 255, 0.906);
+    background-size: 350px 270px;
+}
+#mech:hover{
+    box-shadow: none;
+    text-shadow: -2px -2px 8px rgba(255, 255, 255, 0.906);
+    background-size: 350px 270px;
+}
+#civil:hover{
+    box-shadow: none;
+    text-shadow: -2px -2px 8px rgba(255, 255, 255, 0.906);
+    background-size: 350px 270px;
+}
+#chem:hover{
+    box-shadow: none;
+    text-shadow: -2px -2px 8px rgba(255, 255, 255, 0.906);
+    background-size: 350px 270px;
 }
