@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech | Amupedia</title>
+    <link rel="stylesheet" href="/Home/home.css">
+    <link rel="stylesheet" href="BTech.css">
+    <link rel="shortcut icon" type="image/svg" href="/favicon.svg">
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img src="/Home/images/amupedia-symm.png" alt="Logo Amupedia" class="logo">
+
+        <!-- hamburger menu icon (for mobile phones) -->
+        <input type="checkbox" id="menu">
+        <label for="menu" class="ham">
+            <div id="ham_line_1"></div>
+            <div id="ham_line_2"></div>
+            <div id="ham_line_3"></div>
+        </label>
+
+        <!-- overlay to be shown when nav bar becomes visible -->
+        <div class="blackoverlay" onclick="uncheck()"></div>
+
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <div class="navi">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/Home/home.html?">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <input type="checkbox" id="crs">
+                    <label for="crs" class="crstext">
+                        Courses 
+                        <p id="crsicon">▾</p>
+                    </label>
+                    <div class="crslist">
+                        <a href="">B.Tech</a>
+                        <a href="">B.Com</a>
+                        <a href="">B.E</a>
+                    </div>
+                    <li class="tem"><a href="">Team</a></li>
+                    <li class="blg"><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- background on top -->
+    <div class="topbg"></div>
+
+    <!-- center amupedia text -->
+    <div class="center_text">
+        <p>B.Tech</p>
+    </div>
+
+    <!-- wave-pattern -->
+    <section>
+        <div class="wave"></div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+        <div class="wave wave5"></div>
+    </section>
+
+    <section id="btcontent">
+
+    </section>
+
+    <footer>
+        <div id="above_bg">
+            <p>Folow Us On</p>
+            <div id="icons">
+                <a href="https://www.instagram.com/amu.pedia/?hl=am-et" target="_blank">
+                    <div class="insta"></div>
+                </a>
+                <a href="https://www.facebook.com/AMUPedia" target="_blank">
+                    <div class="fb"></div>
+                </a>
+                <a href="https://twitter.com/AmuPedia?t=PEHmP10PAymk6gsTykKtAQ&s=08" target="_blank">
+                    <div class="twitter"></div>
+                </a>
+                <a href="https://in.linkedin.com/company/amupedia" target="_blank">
+                    <div class="linkedin"></div>
+                </a>
+            </div>
+        </div>
+        <div id="ftbg">
+            <p>Copyright2021@amupedia.com</p>
+        </div>
+    </footer>
+    <script src="/Home/home.js"></script>
+</body>
+</html>

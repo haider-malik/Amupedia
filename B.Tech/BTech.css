@@ -1,0 +1,5 @@
+.topbg{
+    width: 100%;
+    height: 500px;
+    background: url('images/top_bg.svg') no-repeat center center/cover;
+}
