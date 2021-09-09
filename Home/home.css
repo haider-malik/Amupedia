@@ -727,16 +727,16 @@ input:focus{
 }
 
 #insta{
-    background: url(images/instagram.png) no-repeat center center/cover;
+    background: url(images/insta.svg) no-repeat center center/cover;
 }
 #fb{
-    background: url(images/facebook.png) no-repeat center center/cover;
-}
-#linkedin{
-    background: url(images/linked_in.png) no-repeat center center/cover;
+    background: url(images/fb.svg) no-repeat center center/cover;
 }
 #twitter{
-    background: url(images/twitter.png) no-repeat center center/cover;
+    background: url(images/twitter.svg) no-repeat center center/cover;
+}
+#linkedin{
+    background: url(images/linkedin.svg) no-repeat center center/cover;
 }
 
 
