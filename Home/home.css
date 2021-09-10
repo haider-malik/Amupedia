@@ -600,14 +600,14 @@ navigation menu opens in mobile phones */
 
 /* Styling for contact form  */
 .cntfrm{
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-gap: 7px;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto 0px auto;
 }
-.cntfrm div{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 
 .details{
@@ -620,6 +620,7 @@ navigation menu opens in mobile phones */
     border: none;
     border-radius: 10px;
     box-shadow: 0px 2px rgb(86, 86, 255);
+    transition: all 0.4s ease;
 }
 
 ::placeholder{
@@ -643,6 +644,7 @@ input:focus{
     border-radius: 10px;
     flex-basis: 41%;
     box-shadow: 0px 1.4px rgb(86, 86, 255);
+    transition: all 0.4s ease;
 }
 
 .msg{
@@ -655,18 +657,36 @@ input:focus{
     border-radius: 10px;
     flex-basis: 38%;
     box-shadow: 0px 1.4px rgb(86, 86, 255);
+    transition: all 0.4s ease;
 }
 
-.sub{
+@media only screen and (min-width: 516px){
+    .address,.msg{
+        grid-column: 1/ span 2;
+    }
+}
+
+#sub{
+
+    display: block;
+    margin: 8px auto;
+    width: 77%;
+    text-align: center;
+    max-width: 585px;
+
     color: rgb(62, 62, 252);
-    flex-basis: 20%;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    margin: 7px; 
+
     background-color: rgb(159, 154, 255);
     box-shadow: 0px 1.4px rgb(86, 86, 255);
     cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#sub:hover{
+    background-color: rgb(243, 239, 255);
 }
 
 /* Footer Styling  */
