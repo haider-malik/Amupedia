@@ -234,7 +234,7 @@ navigation menu opens in mobile phones */
     }
     .navbar ul li a{
         width: 100%;
-        font-size: 23px;
+        font-size: 22px;
         color: rgb(255, 255, 255);
         text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228) ;
     }

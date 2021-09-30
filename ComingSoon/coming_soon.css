@@ -1,0 +1,107 @@
+.topbg{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom,rgb(67, 1, 133),rgba(0, 0, 0, 0)) no-repeat center center/cover;
+    z-index: -1;
+}
+
+#cntnt{
+    width: 100%;
+    height: 199px;
+    position: relative;
+    bottom: 20px;
+    margin: auto;
+}
+
+#cmng,#sn{
+    color: rgb(237, 215, 255);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0px;
+    font-weight: bolder;
+    transform: rotate(-2deg);
+}
+#cmng > span, #sn > span{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.1s ease;
+}
+
+#c{
+    animation: blink 2s linear infinite;
+}
+
+#o1{
+    animation: blink 3s linear infinite;
+    animation-delay: 2s;
+}
+
+#m{
+    animation: blink 3s linear infinite;
+    animation-delay: 4s;
+}
+
+#i{
+    animation: blink 3s linear infinite;
+    animation-delay: 6s;
+}
+
+#n1{
+    animation: blink 3s linear infinite;
+    animation-delay: 8s;
+}
+#g{
+    animation: blink 3s linear infinite;
+    animation-delay: 10s;
+}
+
+#s{
+    animation: blink 3s linear infinite;
+}
+#o2{
+    animation: blink 3s linear infinite;
+    animation-delay: 2s;
+}
+#o3{
+    animation: blink 3s linear infinite;
+    animation-delay: 4s;
+}
+#n2{
+    animation: blink 3s linear infinite;
+    animation-delay: 6s;
+}
+
+@keyframes blink{
+    0%{
+        color: rgb(237, 215, 255);
+    }
+
+    50%{
+        color: rgb(136, 0, 255);
+        text-shadow: -2px -2px 30px rgb(136, 0, 255);
+    }
+     
+    100%{
+        color: rgb(237, 215, 255);
+    }
+}
+
+@media only screen and (max-width:600px){
+    #cntnt{
+        top: 50px;
+    }
+    #cmng > span, #sn > span{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:299px){
+    #ftbg{
+        font-size: 17px;
+    }
+}
