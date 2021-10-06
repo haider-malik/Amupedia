@@ -1,766 +1,750 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-h2{
-    font-family: 'Proza Libre', sans-serif;
-    font-weight: bold;
+h2 {
+	font-family: "Proza Libre", sans-serif;
+	font-weight: bold;
 }
 
 /* style for logo  */
-.logo{
-    position: absolute;
-    width: 20%;
-    float: left;
-    top: 2vh;
-    left: 1.5vh;
-    max-width: 105px;
+.logo {
+	position: absolute;
+	width: 20%;
+	float: left;
+	top: 2vh;
+	left: 1.5vh;
+	max-width: 105px;
 }
 
 /* navigation bar style for mobile phone */
-.navbar ul{
-    font-family: 'Baloo Bhai 2';
-    opacity: 80%;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    width: 40%;
-    top: 100px;
-    right: -700px;
-    list-style: none;
-    padding: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    transition: all 0.5s cubic-bezier(0, 1.21, 1, 0.97);
-    z-index: 1000;
+.navbar ul {
+	font-family: "Baloo Bhai 2";
+	opacity: 80%;
+	background-color: rgb(255, 255, 255);
+	position: fixed;
+	width: 40%;
+	top: 100px;
+	right: -700px;
+	list-style: none;
+	padding: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	transition: all 0.5s cubic-bezier(0, 1.21, 1, 0.97);
+	z-index: 1000;
 }
 
 /* targeting list items of navigation bar  */
-.navbar ul li{
-    display: inline-block;
-    text-align: center;
-    border: none;
-    margin: 5px auto;
-    transition: all 0.5s ease;
-    z-index: 21;
-    border-radius: 10px;
-    width: 100%;
-    padding: 2px;
-    cursor: pointer;
+.navbar ul li {
+	display: inline-block;
+	text-align: center;
+	border: none;
+	margin: 5px auto;
+	transition: all 0.5s ease;
+	z-index: 21;
+	border-radius: 10px;
+	width: 100%;
+	padding: 2px;
+	cursor: pointer;
 }
 
 /* nav bar links  */
-.navbar ul li a{
-    font-size: 17px;
-    text-decoration: none;
-    color: black;
-    list-style: none;
+.navbar ul li a {
+	font-size: 17px;
+	text-decoration: none;
+	color: black;
+	list-style: none;
 }
 
-
 /* checkbox for hamburger menu  */
-#menu{
-    position: absolute;
-    opacity: 0;
-    z-index: 20;
-    top: 10px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
+#menu {
+	position: absolute;
+	opacity: 0;
+	z-index: 20;
+	top: 10px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
 }
 
 /* hamburger menu style  */
-.ham{
-    justify-content: center;
-    z-index: 1000;
-    position: absolute;
-    top: 5.5vw;
-    right: 20px;
-    width: 10%;
-    height: 10%;
-    background-color: transparent;
-    border-radius: 12px;
-    padding: 10px;
-    transition: all 0.5s ease;
+.ham {
+	justify-content: center;
+	z-index: 1000;
+	position: absolute;
+	top: 5.5vw;
+	right: 20px;
+	width: 10%;
+	height: 10%;
+	background-color: transparent;
+	border-radius: 12px;
+	padding: 10px;
+	transition: all 0.5s ease;
 }
 
-
 /* styling of lines present in hamburger menu */
-.ham div{
-    position: absolute;
-    left: 12px;
-    width: 60%;
-    margin: auto;
-    height: 4px;
-    border-radius: 4px;
-    background-color: white;
-    color: white;
-    transition: all 0.5s ease;
+.ham div {
+	position: absolute;
+	left: 12px;
+	width: 60%;
+	margin: auto;
+	height: 4px;
+	border-radius: 4px;
+	background-color: white;
+	color: white;
+	transition: all 0.5s ease;
 }
 
 /* style for each line of hamburger menu */
-#ham_line_1{
-    transition: all 0.4s ease;
+#ham_line_1 {
+	transition: all 0.4s ease;
 }
 
 /* targeting each line uniquely */
-#ham_line_2{
-    top: 23px;
-    transition: all 0.5s ease;
+#ham_line_2 {
+	top: 23px;
+	transition: all 0.5s ease;
 }
 
 /* line 3 */
-#ham_line_3{
-    top: 37px;
-    transition: all 0.4s ease;
+#ham_line_3 {
+	top: 37px;
+	transition: all 0.4s ease;
 }
 
 /* style for overlay that apprars when nav menu shows up  */
-.blackoverlay{
-
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: black;
-    opacity: 0;
-    transition: all 0.4s ease;
+.blackoverlay {
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+	opacity: 0;
+	transition: all 0.4s ease;
 }
 
-#menu:checked ~ .ham{
-    position: fixed;
+#menu:checked ~ .ham {
+	position: fixed;
 }
 
 /* changes when checkbox is checked  */
-#menu:checked ~ .navbar ul{
-    right: 0px;
+#menu:checked ~ .navbar ul {
+	right: 0px;
 }
 
 /* animation after clicking the hamburger icon  */
-#menu:checked ~ .ham > #ham_line_1{
-    transform: rotate(135deg);
-    top: 23px;
+#menu:checked ~ .ham > #ham_line_1 {
+	transform: rotate(135deg);
+	top: 23px;
 }
 
-#menu:checked ~ .ham > #ham_line_3{
-    transform: rotate(-135deg);
-    top: 23px;
+#menu:checked ~ .ham > #ham_line_3 {
+	transform: rotate(-135deg);
+	top: 23px;
 }
 
-#menu:checked ~ .ham > #ham_line_2{
-    transform: rotate(135deg);
+#menu:checked ~ .ham > #ham_line_2 {
+	transform: rotate(135deg);
 }
 
 /* appearance for the overlay in the background when 
 navigation menu opens in mobile phones */
-#menu:checked ~ .blackoverlay{
-    opacity: 0.4;
-    z-index: 900;
+#menu:checked ~ .blackoverlay {
+	opacity: 0.4;
+	z-index: 900;
 }
 
 /* courses section effect in navbar  */
-#crs{
-    display: none;
+#crs {
+	display: none;
 }
 
-.crstext{
-    display: block;
-    text-align: center;
-    margin: 5px auto;
-    font-size: 17px;
-    cursor: pointer;
-    z-index: 1050;
+.crstext {
+	display: block;
+	text-align: center;
+	margin: 5px auto;
+	font-size: 17px;
+	cursor: pointer;
+	z-index: 1050;
 }
 
-#crsicon{
-    position: relative;
-    display: inline-block;
-    transition: all 0.5s ease;
+#crsicon {
+	position: relative;
+	display: inline-block;
+	transition: all 0.5s ease;
 }
 
-.crslist{
-    position: relative;
-    bottom: 10px;
-    opacity: 0;
-    max-height: 0;
-    text-align: center;
-    transition: all 0.5s ease;
-    z-index: 1001;
+.crslist {
+	position: relative;
+	bottom: 10px;
+	opacity: 0;
+	max-height: 0;
+	text-align: center;
+	transition: all 0.5s ease;
+	z-index: 1001;
 }
-.crslist a{
-    font-size: 17px;
-    text-decoration: none;
-    color: black;
-    margin: 6px;
-}
-
-#crs:checked ~ .crslist{
-    max-height: 400px;
-    bottom: 0;
-    opacity: 1;
+.crslist a {
+	font-size: 17px;
+	text-decoration: none;
+	color: black;
+	margin: 6px;
 }
 
-#crs:checked ~ .crstext > #crsicon{
-    transform: rotate(-180deg);
-    top: 2.3px;
+#crs:checked ~ .crslist {
+	max-height: 400px;
+	bottom: 0;
+	opacity: 1;
+}
+
+#crs:checked ~ .crstext > #crsicon {
+	transform: rotate(-180deg);
+	top: 2.3px;
 }
 
 /* navigation bar on bigger screens  */
-@media only screen and (min-width:750px){
-    .logo{
-        left: 30px;
-    }
-    .ham{
-        display: none;
-    }
-    .navbar ul{
-        width: 550px;
-        position: absolute;
-        background: transparent;
-        display: flex;
-        right: 50px;
-        top: 40px;
-        padding: 0;
-    }
-    .navbar ul li{
-        background-color: transparent;
-        font-weight: bold;
-        width: 100px;
-        border-radius: 15px;
-        margin: auto 5px;
-        transition: all 0.2s ease;
-    }
-    .navbar ul li a{
-        width: 100%;
-        font-size: 22px;
-        color: rgb(255, 255, 255);
-        text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228) ;
-    }
-    .navbar ul li:hover > a{
-        text-shadow: white 2px 2px 10px;
-    }
-    .tem {
-        flex-basis: 12%;
-    }
-    .blg{
-        flex-basis: 12%;
-    }
-    .crstext{
-        font-size: 22px;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228) ;
-    }
-    .crslist{
-        position: absolute;
-        top: 39px;
-        right: 215px;
-        display: flex;
-        flex-direction: column;
-        text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228) ;
-    }
-    .crslist a{
-        margin: 0;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        font-size: 22px;
-    }
-    .crslist a:hover{
-        text-shadow: white 2px 2px 10px;
-    }
-    .crslist:hover{
-        height: auto;
-        opacity: 1;
-    }
-    .crstext:hover{
-        text-shadow: white 2px 2px 10px;
-    }
-    .crstext:hover ~ .crslist{
-        height: auto;
-        opacity: 1;
-    }
+@media only screen and (min-width: 750px) {
+	.logo {
+		left: 30px;
+	}
+	.ham {
+		display: none;
+	}
+	.navbar ul {
+		width: 550px;
+		position: absolute;
+		background: transparent;
+		display: flex;
+		right: 50px;
+		top: 40px;
+		padding: 0;
+	}
+	.navbar ul li {
+		background-color: transparent;
+		font-weight: bold;
+		width: 100px;
+		border-radius: 15px;
+		margin: auto 5px;
+		transition: all 0.2s ease;
+	}
+	.navbar ul li a {
+		width: 100%;
+		font-size: 22px;
+		color: rgb(255, 255, 255);
+		text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228);
+	}
+	.navbar ul li:hover > a {
+		text-shadow: white 2px 2px 10px;
+	}
+	.tem {
+		flex-basis: 12%;
+	}
+	.blg {
+		flex-basis: 12%;
+	}
+	.crstext {
+		font-size: 22px;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228);
+	}
+	.crslist {
+		position: absolute;
+		top: 39px;
+		right: 215px;
+		display: flex;
+		flex-direction: column;
+		text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228);
+	}
+	.crslist a {
+		margin: 0;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		font-size: 22px;
+	}
+	.crslist a:hover {
+		text-shadow: white 2px 2px 10px;
+	}
+	.crslist:hover {
+		height: auto;
+		opacity: 1;
+	}
+	.crstext:hover {
+		text-shadow: white 2px 2px 10px;
+	}
+	.crstext:hover ~ .crslist {
+		height: auto;
+		opacity: 1;
+	}
 }
 
 /* style for background on top  */
-.headerbg{
-    width: 100%;
-    height: 500px;
-    background: url('images/header_bg.svg') no-repeat center center/cover;
+.headerbg {
+	width: 100%;
+	height: 500px;
+	background: url("images/header_bg.svg") no-repeat center center/cover;
 }
 
 /* Amupedia text in the center of the page */
-.center_text{
-    font-family: 'Balsamiq Sans', cursive;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 30;
-    text-align: center;
-    font-size: 2.3rem;
-    font-weight: bold;
-    bottom: 300px;
-    color: white;
+.center_text {
+	font-family: "Balsamiq Sans", cursive;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 30;
+	text-align: center;
+	font-size: 2.3rem;
+	font-weight: bold;
+	bottom: 300px;
+	color: white;
 }
 
 /* subheading of amupedia text in the center  */
-#subline{
-    position: relative;
-    bottom: 2px;
-    font-size: 13px;
-    text-align: center;
-    text-transform: uppercase;
+#subline {
+	position: relative;
+	bottom: 2px;
+	font-size: 13px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 /* Center Text when screen becomes bigger  */
-@media only screen and (min-width:600px){
-    .center_text{
-        font-size: 4rem;
-    }
-    #subline{
-        font-size: 23px;
-    }
+@media only screen and (min-width: 600px) {
+	.center_text {
+		font-size: 4rem;
+	}
+	#subline {
+		font-size: 23px;
+	}
 }
 
 /* style for wave pattern  */
-.wave{
-    background: url("images/wave.png");
-    background-size: 140vw 150px;
-    height: 100px;
-    background-repeat: no-repeat;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    z-index: 18;
-    top: 450px;
-    animation: mainwave 4s ease-in-out infinite;
-    transition: all 0.1s ease;
+.wave {
+	background: url("images/wave.png");
+	background-size: 140vw 150px;
+	height: 100px;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	z-index: 18;
+	top: 450px;
+	animation: mainwave 4s ease-in-out infinite;
+	transition: all 0.1s ease;
 }
 
 /* special properties for 1st wave pattern animation */
-.wave1{
-    z-index: 16;
-    opacity: 0.4;
-    top: 440px;
-    animation: animate2 3s ease infinite;
-    animation-delay: 0.2s;
-    /* transform: rotate(-3deg); */
+.wave1 {
+	z-index: 16;
+	opacity: 0.4;
+	top: 440px;
+	animation: animate2 3s ease infinite;
+	animation-delay: 0.2s;
+	/* transform: rotate(-3deg); */
 }
 
 /* second wave for animation */
-.wave2{
-  
-    z-index: 15;
-    top: 445px;
-    opacity: 0.6;
-    animation: animate 3s linear infinite;
-
+.wave2 {
+	z-index: 15;
+	top: 445px;
+	opacity: 0.6;
+	animation: animate 3s linear infinite;
 }
 
 /* third wave for animation  */
-.wave3{
-  
-    top: 460px;
-    z-index: 17;
-    opacity: 0.8;
-    animation: animate 9s ease-in-out infinite;
-    animation-delay: 6s;
+.wave3 {
+	top: 460px;
+	z-index: 17;
+	opacity: 0.8;
+	animation: animate 9s ease-in-out infinite;
+	animation-delay: 6s;
 }
 
 /* fourth wave for animation */
-.wave4{
-    top: 430px;
-    z-index: 14;
-    opacity: 0.3;
-    animation: animate2 5s linear infinite;
-    animation-delay: 1s;
+.wave4 {
+	top: 430px;
+	z-index: 14;
+	opacity: 0.3;
+	animation: animate2 5s linear infinite;
+	animation-delay: 1s;
 }
 
 /* animation for the main wave which will go up and down */
-@keyframes mainwave{
-    0%{
-        background-position-x: 0;
-    }
-    50%{
-        background-position-x: -100px;
-    }
-    100%{
-        background-position-x: 0;
-    }
+@keyframes mainwave {
+	0% {
+		background-position-x: 0;
+	}
+	50% {
+		background-position-x: -100px;
+	}
+	100% {
+		background-position-x: 0;
+	}
 }
 
 /* animation for the waves which will go left to right  */
 @keyframes animate {
-    0%{
-        background-position-x: 0;
-        
-    }
-    50%{
-        background-position-x: 250px;
-    }
-    100%{
-        background-position-x: 0;
-    }
+	0% {
+		background-position-x: 0;
+	}
+	50% {
+		background-position-x: 250px;
+	}
+	100% {
+		background-position-x: 0;
+	}
 }
 
 /* animation for the waves which will come right to left  */
 @keyframes animate2 {
-    0%{
-        background-position-x: 0;
-    }
-    50%{
-        background-position-x: -190px;
-    }
-    100%{
-        background-position-x: 0;
-    }
+	0% {
+		background-position-x: 0;
+	}
+	50% {
+		background-position-x: -190px;
+	}
+	100% {
+		background-position-x: 0;
+	}
 }
 
 /* for mobile phones and small screen water wave animation will be controlled by this css  */
-@media only screen and (max-width:486px){
-    .wave{
-        background-size: 700px 100px;
-    }
+@media only screen and (max-width: 486px) {
+	.wave {
+		background-size: 700px 100px;
+	}
 }
 
-
-
 /* styling for section container  */
-#content{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Baloo Bhai 2';
-    background: url('images/whole_background.svg') no-repeat center center/cover;
-
+#content {
+	display: flex;
+	flex-direction: column;
+	font-family: "Baloo Bhai 2";
+	background: url("images/whole_background.svg") no-repeat center center/cover;
 }
 
 /* styling for our mission container  */
-.mission{
-    z-index: 30;
-    text-align: center;
-    margin: 20px 0px;  
+.mission {
+	z-index: 30;
+	text-align: center;
+	margin: 20px 0px;
 }
-.mission h2{
-    line-height: 55px;
-    font-size: 45px;
-    font-weight: bolder;
-    margin: 12px;
+.mission h2 {
+	line-height: 55px;
+	font-size: 45px;
+	font-weight: bolder;
+	margin: 12px;
 }
-.mission p{
-    font-family: 'Baloo Bhai 2';
-    max-width: 700px;
-    margin: auto;
-    padding: 14px;
+.mission p {
+	font-family: "Baloo Bhai 2";
+	max-width: 700px;
+	margin: auto;
+	padding: 14px;
 }
 
-@media only screen and (min-width: 500px){
-    .mission{
-        background-size: 700px 2000px;
-    }
-    .mission p{
-        font-size: 30px;
-    }
+@media only screen and (min-width: 500px) {
+	.mission {
+		background-size: 700px 2000px;
+	}
+	.mission p {
+		font-size: 30px;
+	}
 }
 /* styling the our services section  */
-#ourserv{
-    z-index: 30;
-    position: relative;
-    margin-top: 60px;
-    margin-bottom: 20px;
+#ourserv {
+	z-index: 30;
+	position: relative;
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
 
 /* "Our Services" heading styling */
-#ourserv h2{
-    line-height: 55px;
-    z-index: 30;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bolder;
-    margin: 10px;
+#ourserv h2 {
+	line-height: 55px;
+	z-index: 30;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bolder;
+	margin: 10px;
 }
 
 /* styling for images used in our service section  */
-#ourserimgs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1100px;
-    margin: auto;
+#ourserimgs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1100px;
+	margin: auto;
 }
 
-#ourserimgs div{
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    margin: 10px auto;
+#ourserimgs div {
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	margin: 10px auto;
 }
 
-#ourserimgs div img{
-    display: block;
-    margin: 15px auto;
+#ourserimgs div img {
+	display: block;
+	margin: 15px auto;
 
-    width: 250px;
-    height: 150px;
+	width: 250px;
+	height: 150px;
 }
 
-#ourserimgs div p{
-    font-weight: bold;
+#ourserimgs div p {
+	font-weight: bold;
 }
 
 /* styling for vector bg for grab notes */
 
-
 /* styling for grab your notes  */
-.grabnotes{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    margin-bottom: 40px;
-    justify-content: center;
+.grabnotes {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	margin-bottom: 40px;
+	justify-content: center;
 }
 
 /* Grab Your Notes Heading  */
-.grabh2{
-    justify-content: center;
-    line-height: 55px;
-    z-index: 30;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bolder;
-    margin: 80px 8px 0px 8px;
+.grabh2 {
+	justify-content: center;
+	line-height: 55px;
+	z-index: 30;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bolder;
+	margin: 80px 8px 0px 8px;
 }
-.grabnotes a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+.grabnotes a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
 }
-.grabnotes div{
-    text-align: center;
-    height: 130px;
-    width: 130px;
-    z-index: 30;
-    border-radius: 10px;
-    background-size: 6em;
-    margin: 24px 3vw;
+.grabnotes div {
+	text-align: center;
+	height: 130px;
+	width: 130px;
+	z-index: 30;
+	border-radius: 10px;
+	background-size: 6em;
+	margin: 24px 3vw;
 }
-.grabnotes div p{
-    position: relative;
-    top: 140px;
-    line-height: 25px;
-    font-weight: bold;
+.grabnotes div p {
+	position: relative;
+	top: 140px;
+	line-height: 25px;
+	font-weight: bold;
 }
-.grab1{
-    background: url('images/BTech.svg') no-repeat top center;
+.grab1 {
+	background: url("images/BTech.svg") no-repeat top center;
 }
-.grab2{
-    background: url('images/BE.svg') no-repeat top center/cover;
+.grab2 {
+	background: url("images/BE.svg") no-repeat top center/cover;
 }
-.grab3{
-    background: url('images/BCOM.svg') no-repeat top center/cover;
+.grab3 {
+	background: url("images/BCOM.svg") no-repeat top center/cover;
 }
-.grab4{
-    background: url('images/B.Sc.svg') no-repeat top center/cover;
+.grab4 {
+	background: url("images/B.Sc.svg") no-repeat top center/cover;
 }
 
 /* styling for grab your notes section for pc  */
-@media only screen and (min-width:900px){
-    
-    .grabnotes div{
-        width: 200px;
-        height: 200px;
-        background-size: 10em;
-    }
-    .grabnotes div p{
-        top: 220px;
-        font-size: 30px;
-    }
-    
+@media only screen and (min-width: 900px) {
+	.grabnotes div {
+		width: 200px;
+		height: 200px;
+		background-size: 10em;
+	}
+	.grabnotes div p {
+		top: 220px;
+		font-size: 30px;
+	}
 }
 
-@media only screen and (min-width:900px) and (max-width:1050px){
-    .grabnotes .grab2 p{
-        top: 150px;
-    }
+@media only screen and (min-width: 900px) and (max-width: 1050px) {
+	.grabnotes .grab2 p {
+		top: 150px;
+	}
 }
 
 /* styling for recent updates section  */
 /* same css as grabnotes section will be given to recent updates section  */
 
-.rec1{
-    background: url('images/recup_app.svg') no-repeat center center;
+.rec1 {
+	background: url("images/recup_app.svg") no-repeat center center;
 }
-.rec2{
-    background: url('images/recup_blog.svg') no-repeat top center;
+.rec2 {
+	background: url("images/recup_blog.svg") no-repeat top center;
 }
-.rec3{
-    background: url('images/recup_comp_exam.svg') no-repeat top center;
-    background-size: 4em;
+.rec3 {
+	background: url("images/recup_comp_exam.svg") no-repeat top center;
+	background-size: 4em;
 }
 
 /* Styling for contact form  */
-.cntfrm{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-    grid-gap: 7px;
-    width: 80%;
-    max-width: 600px;
-    margin: 30px auto 0px auto;
+.cntfrm {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 7px;
+	width: 80%;
+	max-width: 600px;
+	margin: 30px auto 0px auto;
 }
 
-
-
-.details{
-    flex-basis: 20%;
-    margin: 7px;
-    padding: 13px 18px;
-    background-color: rgb(218, 218, 255);
-    color: royalblue;
-    font-family: 'Baloo Bhai 2';
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 2px rgb(86, 86, 255);
-    transition: all 0.4s ease;
+.details {
+	flex-basis: 20%;
+	margin: 7px;
+	padding: 13px 18px;
+	background-color: rgb(218, 218, 255);
+	color: royalblue;
+	font-family: "Baloo Bhai 2";
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 2px rgb(86, 86, 255);
+	transition: all 0.4s ease;
 }
 
-::placeholder{
-    color: rgb(62, 62, 252);
-    font-family: 'Baloo Bhai 2';
+::placeholder {
+	color: rgb(62, 62, 252);
+	font-family: "Baloo Bhai 2";
 }
 
-input:focus{
-    background-color: rgb(243, 239, 255);
-    box-shadow: none;
-    outline: none;
+input:focus {
+	background-color: rgb(243, 239, 255);
+	box-shadow: none;
+	outline: none;
 }
 
-.address{
-    margin: 7px;
-    padding: 13px 18px;
-    background-color: rgb(188, 188, 250);
-    color: royalblue;
-    font-family: 'Baloo Bhai 2';
-    border: none;
-    border-radius: 10px;
-    flex-basis: 41%;
-    box-shadow: 0px 1.4px rgb(86, 86, 255);
-    transition: all 0.4s ease;
+.address {
+	margin: 7px;
+	padding: 13px 18px;
+	background-color: rgb(188, 188, 250);
+	color: royalblue;
+	font-family: "Baloo Bhai 2";
+	border: none;
+	border-radius: 10px;
+	flex-basis: 41%;
+	box-shadow: 0px 1.4px rgb(86, 86, 255);
+	transition: all 0.4s ease;
 }
 
-.msg{
-    margin: 7px;
-    padding: 24px 18px;
-    background-color: rgb(172, 168, 249);
-    color: royalblue;
-    font-family: 'Baloo Bhai 2';
-    border: none;
-    border-radius: 10px;
-    flex-basis: 38%;
-    box-shadow: 0px 1.4px rgb(86, 86, 255);
-    transition: all 0.4s ease;
+.msg {
+	margin: 7px;
+	padding: 24px 18px;
+	background-color: rgb(172, 168, 249);
+	color: royalblue;
+	font-family: "Baloo Bhai 2";
+	border: none;
+	border-radius: 10px;
+	flex-basis: 38%;
+	box-shadow: 0px 1.4px rgb(86, 86, 255);
+	transition: all 0.4s ease;
 }
 
-@media only screen and (min-width: 516px){
-    .address,.msg{
-        grid-column: 1/ span 2;
-    }
+@media only screen and (min-width: 516px) {
+	.address,
+	.msg {
+		grid-column: 1 / span 2;
+	}
 }
 
-#sub{
+#sub {
+	display: block;
+	margin: 8px auto;
+	width: 77%;
+	text-align: center;
+	max-width: 585px;
 
-    display: block;
-    margin: 8px auto;
-    width: 77%;
-    text-align: center;
-    max-width: 585px;
+	color: rgb(62, 62, 252);
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
 
-    color: rgb(62, 62, 252);
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-
-    background-color: rgb(159, 154, 255);
-    box-shadow: 0px 1.4px rgb(86, 86, 255);
-    cursor: pointer;
-    transition: all 0.4s ease;
+	background-color: rgb(159, 154, 255);
+	box-shadow: 0px 1.4px rgb(86, 86, 255);
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
-#sub:hover{
-    background-color: rgb(243, 239, 255);
+#sub:hover {
+	background-color: rgb(243, 239, 255);
 }
 
 /* Footer Styling  */
 /* background overlapping footer  */
-#above_bg{
-    font-family: 'Baloo Bhai 2';
-    font-size: 23px;
-    background: url('images/footer_bacg.jpeg') no-repeat center center/cover;
-    z-index: 12;
-    height: 150px;
-    width: 80%;
-    margin: auto;
-    border-radius: 20px;
-    position: relative;
-    top: 80px;
+#above_bg {
+	font-family: "Baloo Bhai 2";
+	font-size: 23px;
+	background: url("images/footer_bacg.jpeg") no-repeat center center/cover;
+	z-index: 12;
+	height: 150px;
+	width: 80%;
+	margin: auto;
+	border-radius: 20px;
+	position: relative;
+	top: 80px;
 }
 
-#above_bg p{
-    text-align: center;
-    position: relative;
-    top: 15%;
-    color: white;
-    font-weight: bold;
-    transition: all 0.5s ease;
+#above_bg p {
+	text-align: center;
+	position: relative;
+	top: 15%;
+	color: white;
+	font-weight: bold;
+	transition: all 0.5s ease;
 }
 
 /* social icons  */
-#icons{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    top: 30px;
+#icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	top: 30px;
 }
-#icons div{
-    width: 40px;
-    height: 40px;
-    margin: auto 5px;
+#icons div {
+	width: 40px;
+	height: 40px;
+	margin: auto 5px;
 }
 
 /* footer background  */
-#ftbg{
-    background: url('images/footer_2_bg.png') no-repeat center center/cover;
-    width: 100%;
-    height: 150px;
-    bottom: 0;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+#ftbg {
+	background: url("images/footer_2_bg.png") no-repeat center center/cover;
+	width: 100%;
+	height: 150px;
+	bottom: 0;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 }
 
-#ftbg p{
-    font-family: 'Baloo Bhai 2';
-    font-size: 19px;
-    text-align: center;
-    position: relative;
-    top: 70%;
-    color: white;
+#ftbg p {
+	font-family: "Baloo Bhai 2";
+	font-size: 19px;
+	text-align: center;
+	position: relative;
+	top: 70%;
+	color: white;
 }
 
-#insta{
-    background: url(images/insta.svg) no-repeat center center/cover;
+#insta {
+	background: url(images/insta.svg) no-repeat center center/cover;
 }
-#fb{
-    background: url(images/fb.svg) no-repeat center center/cover;
+#fb {
+	background: url(images/fb.svg) no-repeat center center/cover;
 }
-#twitter{
-    background: url(images/twitter.svg) no-repeat center center/cover;
+#twitter {
+	background: url(images/twitter.svg) no-repeat center center/cover;
 }
-#linkedin{
-    background: url(images/linkedin.svg) no-repeat center center/cover;
+#linkedin {
+	background: url(images/linkedin.svg) no-repeat center center/cover;
 }
-
 
 /* for mobile phones having width less than 300px */
-@media only screen and (max-width:299px){
-    #ftbg {
-        font-size: 17px;
-    }
+@media only screen and (max-width: 299px) {
+	#ftbg {
+		font-size: 17px;
+	}
 }
