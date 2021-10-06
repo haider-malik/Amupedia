@@ -58,7 +58,6 @@ h2{
 }
 
 
-
 /* checkbox for hamburger menu  */
 #menu{
     position: absolute;
@@ -239,7 +238,7 @@ navigation menu opens in mobile phones */
         text-shadow: 2px -2px 8px rgba(0, 0, 0, 0.228) ;
     }
     .navbar ul li:hover > a{
-        text-decoration: underline;
+        text-shadow: white 2px 2px 10px;
     }
     .tem {
         flex-basis: 12%;
@@ -268,15 +267,14 @@ navigation menu opens in mobile phones */
         font-size: 22px;
     }
     .crslist a:hover{
-        text-decoration: underline;
+        text-shadow: white 2px 2px 10px;
     }
     .crslist:hover{
         height: auto;
         opacity: 1;
     }
     .crstext:hover{
-        text-decoration: underline;
-        
+        text-shadow: white 2px 2px 10px;
     }
     .crstext:hover ~ .crslist{
         height: auto;
