@@ -1,5 +1,9 @@
 {
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "'Cascadia Code'",
-    "diffEditor.wordWrap": "on"
+    "terminal.integrated.fontFamily": "monospace",
+    "diffEditor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
 }
