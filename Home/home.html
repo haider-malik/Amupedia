@@ -1,106 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home | Amupedia</title>
+		<link rel="stylesheet" href="home.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home | Amupedia </title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
-</head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
+			rel="stylesheet"
+		/>
 
-<body>
-    <header>
-        <!-- logo -->
-        <img src="images/amupedia-symm.png" alt="Logo Amupedia" class="logo">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" type="image/svg" href="/favicon.svg" />
+	</head>
 
-        <!-- hamburger menu icon (for mobile phones) -->
-        <input type="checkbox" id="menu">
-        <label for="menu" class="ham">
-            <div id="ham_line_1"></div>
-            <div id="ham_line_2"></div>
-            <div id="ham_line_3"></div>
-        </label>
+	<body>
+		<header>
+			<!-- logo -->
+			<img src="images/amupedia-symm.png" alt="Logo Amupedia" class="logo" />
 
-        <!-- overlay to be shown when nav bar becomes visible -->
-        <div class="blackoverlay"></div>
+			<!-- hamburger menu icon (for mobile phones) -->
+			<input type="checkbox" id="menu" />
+			<label for="menu" class="ham">
+				<div id="ham_line_1"></div>
+				<div id="ham_line_2"></div>
+				<div id="ham_line_3"></div>
+			</label>
 
-        <!-- navigation bar -->
-        <nav class="navbar">
-            <div class="navi">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+			<!-- overlay to be shown when nav bar becomes visible -->
+			<div class="blackoverlay" onclick="uncheck()"></div>
 
-    <!-- background on top -->
-    <img src="images/image 4.jpeg" alt="bg for upper" class="headerbg">
+			<!-- navigation bar -->
+			<nav class="navbar">
+				<div class="navi">
+					<ul>
+						<li><a href="http://127.0.0.1:5500/Home/home.html?">Home</a></li>
+						<li><a href="">About Us</a></li>
+						<input type="checkbox" id="crs" />
+						<label for="crs" class="crstext">
+							Courses
+							<p id="crsicon">▾</p>
+						</label>
+						<div class="crslist">
+							<a href="http://127.0.0.1:5500/B.Tech/BTech.html">B.Tech</a>
+							<a href="">B.Com</a>
+							<a href="">B.E</a>
+						</div>
+						<li class="tem"><a href="">Team</a></li>
+						<li class="blg"><a href="">Blog</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-    <!-- center amupedia text -->
-    <div class="center_text">
-        <p>Amupedia</p>
-    </div>
+		<!-- background on top -->
+		<div class="headerbg"></div>
 
-    <!-- wave-pattern -->
-    <section>
-        <div class="wave"></div>
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-        <div class="wave wave4"></div>
-        <div class="wave wave5"></div>
-    </section>
-    <section id="content">
+		<!-- center amupedia text -->
+		<div class="center_text">
+			<p>Amupedia</p>
+			<p id="subline">Achieving excellence together</p>
+		</div>
 
-        <!-- Our Mission Container -->
-        <div class="mission">
-            <h2>Our Mission</h2>
-            <p>We are the students of AMU, intending to provide you all the quality stuff related to B.Tech, B.Com, B.E,
-                and various other courses, the pdfs related to experiment, viva, and quizzes question, the mid and end
-                semester examination as well as the assignments. We are providing all this content for free.</p>
-        </div>
+		<!-- wave-pattern -->
+		<section>
+			<div class="wave"></div>
+			<div class="wave wave1"></div>
+			<div class="wave wave2"></div>
+			<div class="wave wave3"></div>
+			<div class="wave wave4"></div>
+			<div class="wave wave5"></div>
+		</section>
 
-        <!-- Our Services Container  -->
-        <div id="ourserv">
-            <h2>Our Services</h2>
-            <div id="ourserimgs">
-                <div>
-                    <img src="images/Pdf of all sub.png" alt="">
-                    <p>PDFs OF ALL SUBJECTS</p>
-                </div>
-                <div>
-                    <img src="images/exp by yt.png" alt="">
-                    <p>CHAPTER EXPLANATION BY YOUTUBE VIDEO</p>
-                </div>
-                <div>
-                    <img src="images/answer of quiz.png" alt="">
-                    <p>SOLUTION OF TEST AND QUIZZES</p>
-                </div>
-                <div>
-                    <img src="images/Assignment.png" alt="">
-                    <p>ASSIGNMENTS GIVEN</p>
-                </div>
-            </div>
-        </div>
+		<section id="content">
+			<!-- Our Mission Container -->
+			<div class="mission">
+				<h2>Our Mission</h2>
+				<p>
+					We are the students of AMU, intending to provide you all the quality
+					stuff related to B.Tech, B.Com, B.E, and various other courses, the
+					pdfs related to experiment, viva, and quizzes question, the mid and
+					end semester examination as well as the assignments. We are providing
+					all this content for free.
+				</p>
+			</div>
 
-        <!-- grab your notes section  -->
-        <h2 class="grabh2">Grab Your Notes Here</h2>
-        <div class="grabnotes">
-            <a href="https://www.google.co.in/" target="_blank"><div class="grab1"><p>B.Tech</p></div></a>
-            <a href=""><div class="grab2"><p>B.E</p></div></a>
-            <a href=""><div class="grab3"><p>B.Com</p></div></a>
-            <a href=""><div class="grab4"><p>B.Sc</p></div></a>
-        </div>
-    </section>
-</body>
+			<!-- Our Services Container  -->
+			<div id="ourserv">
+				<h2>Our Services</h2>
+				<div id="ourserimgs">
+					<div>
+						<img src="images/Pdf of all sub.png" alt="" />
+						<p>PDFs OF ALL SUBJECTS</p>
+					</div>
+					<div>
+						<img src="images/exp by yt.png" alt="" />
+						<p>CHAPTER EXPLANATION BY YOUTUBE VIDEO</p>
+					</div>
+					<div>
+						<img src="images/answer of quiz.png" alt="" />
+						<p>SOLUTION OF TEST AND QUIZZES</p>
+					</div>
+					<div>
+						<img src="images/Assignment.png" alt="" />
+						<p>ASSIGNMENTS GIVEN</p>
+					</div>
+				</div>
+			</div>
 
+			<!-- grab your notes section  -->
+			<h2 class="grabh2">Grab Your Notes Here</h2>
+			<div class="grabnotes">
+				<a href="" target="_blank">
+					<div class="grab1">
+						<p>B.Tech</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="grab2">
+						<p>B.E</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="grab3">
+						<p>B.Com</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="grab4">
+						<p>B.Sc</p>
+					</div>
+				</a>
+			</div>
+
+			<!-- Recent Updates section  -->
+			<!-- same css as grabnotes section  -->
+			<h2 class="grabh2">Recent Updates</h2>
+			<div class="grabnotes">
+				<a href="">
+					<div class="rec1">
+						<p>App</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="rec2">
+						<p>Blogs</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="rec3">
+						<p>Competetive Exams</p>
+					</div>
+				</a>
+			</div>
+
+			<!-- Contact Form  -->
+			<h2 class="grabh2">Get In Touch With Us</h2>
+			<form action="">
+				<div class="cntfrm">
+					<input
+						required
+						type="text"
+            name="first-name"
+						placeholder="First Name"
+						class="details"
+					/>
+					<input required name="last-name" type="text" placeholder="Last Name" class="details" />
+					<input required name="email" type="email" placeholder="Email" class="details" />
+					<input type="number" name="phone" placeholder="Phone" class="details" />
+					<input required name="address" type="text" placeholder="Address" class="address" />
+					<input
+						required
+            name="message"
+						type="text"
+						placeholder="Type your message here"
+						class="msg"
+					/>
+				</div>
+				<input type="submit" id="sub" />
+			</form>
+		</section>
+
+		<footer>
+			<div id="above_bg">
+				<p>Folow Us On</p>
+				<div id="icons">
+					<a
+						href="https://www.instagram.com/amu.pedia/?hl=am-et"
+						target="_blank"
+					>
+						<div id="insta"></div>
+					</a>
+					<a href="https://www.facebook.com/AMUPedia" target="_blank">
+						<div id="fb"></div>
+					</a>
+					<a
+						href="https://twitter.com/AmuPedia?t=PEHmP10PAymk6gsTykKtAQ&s=08"
+						target="_blank"
+					>
+						<div id="twitter"></div>
+					</a>
+					<a href="https://in.linkedin.com/company/amupedia" target="_blank">
+						<div id="linkedin"></div>
+					</a>
+				</div>
+			</div>
+			<div id="ftbg">
+				<p>Copyright2021@amupedia.com</p>
+			</div>
+		</footer>
+		<script src="home.js"></script>
+	</body>
 </html>

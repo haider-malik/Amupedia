@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>B.Tech | Amupedia</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="/Home/home.css" />
+		<link rel="stylesheet" href="BTech.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" type="image/svg" href="/favicon.svg" />
+	</head>
+	<body>
+		<header>
+			<!-- logo -->
+			<img
+				src="/Home/images/amupedia-symm.png"
+				alt="Logo Amupedia"
+				class="logo"
+			/>
+
+			<!-- hamburger menu icon (for mobile phones) -->
+			<input type="checkbox" id="menu" />
+			<label for="menu" class="ham">
+				<div id="ham_line_1"></div>
+				<div id="ham_line_2"></div>
+				<div id="ham_line_3"></div>
+			</label>
+
+			<!-- overlay to be shown when nav bar becomes visible -->
+			<div class="blackoverlay" onclick="uncheck()"></div>
+
+			<!-- navigation bar -->
+			<nav class="navbar">
+				<div class="navi">
+					<ul>
+						<li><a href="http://127.0.0.1:5500/Home/home.html?">Home</a></li>
+						<li><a href="">About Us</a></li>
+						<input type="checkbox" id="crs" />
+						<label for="crs" class="crstext">
+							Courses
+							<p id="crsicon">▾</p>
+						</label>
+						<div class="crslist">
+							<a href="http://localhost:5500/B.Tech/BTech.html">B.Tech</a>
+							<a href="http://localhost:5500/ComingSoon/coming_soon.html">B.Com</a>
+							<a href="http://localhost:5500/ComingSoon/coming_soon.html">B.E</a>
+						</div>
+						<li class="tem"><a href="http://localhost:5500/ComingSoon/coming_soon.html">Team</a></li>
+						<li class="blg"><a href="http://localhost:5500/ComingSoon/coming_soon.html">Blog</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- background on top -->
+		<div class="topbg"></div>
+
+		<!-- center amupedia text -->
+		<div class="center_text">
+			<p>B.Tech</p>
+		</div>
+
+		<!-- wave-pattern -->
+		<section>
+			<div class="wave"></div>
+			<div class="wave wave1"></div>
+			<div class="wave wave2"></div>
+			<div class="wave wave3"></div>
+			<div class="wave wave4"></div>
+			<div class="wave wave5"></div>
+		</section>
+
+		<!-- content of b.tech section  -->
+		<section id="btcontent">
+			<div class="mission">
+				<h2>B.Tech</h2>
+				<p>
+					Bachelor of Technology (B. Tech) is a professional undergraduate
+					engineering degree programme awarded to candidates after completion of
+					four years of study in the field. This undergraduate programme is your
+					gateway to a career in engineering. In India, a B.Tech degree is
+					offered across various specialisations.
+				</p>
+			</div>
+
+			<h2>Choose Your Branch</h2>
+			<div id="branches">
+				<a href=""
+					><div class="br" id="cs"><p>Computer Engineering</p></div></a
+				>
+				<a href=""
+					><div class="br" id="elb"><p>Electronics Engineering</p></div></a
+				>
+				<a href=""
+					><div class="br" id="elec"><p>Electrical Engineering</p></div></a
+				>
+				<a href=""
+					><div class="br" id="mech"><p>Mechanical Engineering</p></div></a
+				>
+				<a href=""
+					><div class="br" id="civil">
+						<p>Civil</p>
+						<p>Engineering</p>
+					</div></a
+				>
+				<a href=""
+					><div class="br" id="chem"><p>Chemical Engineering</p></div></a
+				>
+			</div>
+		</section>
+
+		<footer>
+			<div id="above_bg">
+				<p>Folow Us On</p>
+				<div id="icons">
+					<a
+						href="https://www.instagram.com/amu.pedia/?hl=am-et"
+						target="_blank"
+					>
+						<div id="insta"></div>
+					</a>
+					<a href="https://www.facebook.com/AMUPedia" target="_blank">
+						<div id="fb"></div>
+					</a>
+					<a
+						href="https://twitter.com/AmuPedia?t=PEHmP10PAymk6gsTykKtAQ&s=08"
+						target="_blank"
+					>
+						<div id="twitter"></div>
+					</a>
+					<a href="https://in.linkedin.com/company/amupedia" target="_blank">
+						<div id="linkedin"></div>
+					</a>
+				</div>
+			</div>
+			<div id="ftbg">
+				<p>Copyright2021@amupedia.com</p>
+			</div>
+		</footer>
+		<script src="/Home/home.js"></script>
+	</body>
+</html>
